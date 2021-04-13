@@ -6,7 +6,7 @@ const array = ["hey", "hello", "good", "awesome", "cool"];
 const HighFive = () => {
   const [state, setstate] = useState({
     inputidx: "",
-    err1: "",
+    err: "",
   });
 
   const inputHandler = (e, idx) => {
@@ -28,7 +28,7 @@ const HighFive = () => {
   };
 
   const { inputidx, err } = state;
-  console.log(inputidx);
+
   return (
     <div>
       {array.map((item, idx) => {
